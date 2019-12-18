@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.core.os.bundleOf
 import com.glureau.epoxy.dojo.controllers.LaunchDetailsController
-import com.glureau.epoxy.dojo.data.dto.Launch
+import com.glureau.epoxy.data.dto.Launch
 import kotlinx.android.synthetic.main.fragment_launch_details.*
 
 class LaunchDetailsFragment : Fragment(R.layout.fragment_launch_details) {

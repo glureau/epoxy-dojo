@@ -1,12 +1,11 @@
 package com.glureau.epoxy.dojo
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.View
-import com.glureau.epoxy.dojo.data.DataRepository
+import com.glureau.epoxy.data.DataRepository
 import com.glureau.epoxy.dojo.controllers.LaunchersController
-import com.glureau.epoxy.dojo.data.dto.Launch
+import com.glureau.epoxy.data.dto.Launch
 import kotlinx.android.synthetic.main.fragment_launches.*
 
 class LaunchesFragment : Fragment(R.layout.fragment_launches) {

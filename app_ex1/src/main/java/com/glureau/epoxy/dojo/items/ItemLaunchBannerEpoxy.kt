@@ -7,9 +7,9 @@ import android.widget.TextView
 import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyModelClass
 import com.airbnb.epoxy.EpoxyModelWithHolder
-import com.betclic.epoxy.KotlinEpoxyHolder
+import com.glureau.epoxy.common.KotlinEpoxyHolder
 import com.glureau.epoxy.dojo.R
-import com.glureau.epoxy.dojo.common.loadUrlInto
+import com.glureau.epoxy.common.loadUrlInto
 
 @EpoxyModelClass
 abstract class ItemLaunchBannerEpoxy : EpoxyModelWithHolder<ItemLaunchBannerEpoxy.Holder>() {
@@ -28,11 +28,11 @@ abstract class ItemLaunchBannerEpoxy : EpoxyModelWithHolder<ItemLaunchBannerEpox
         super.bind(holder)
         holder.title.text = title
         holder.subTitle.text = subTitle
-        holder.imageView.loadUrlInto(pictureUrl)
+        holder.imageView.loadUrlInto(pictureUrl, R.drawable.spacex_logo)
         holder.container.setOnClickListener(onItemClicked)
     }
 
-    class Holder : KotlinEpoxyHolder() {
+    class Holder : com.glureau.epoxy.common.KotlinEpoxyHolder() {
         val container by bind<ViewGroup>(R.id.itemHeaderContainer)
         val title by bind<TextView>(R.id.itemHeaderTitle)
         val subTitle by bind<TextView>(R.id.itemHeaderSubTitle)

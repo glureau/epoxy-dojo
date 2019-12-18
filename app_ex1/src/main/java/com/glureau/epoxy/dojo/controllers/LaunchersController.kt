@@ -2,7 +2,7 @@ package com.glureau.epoxy.dojo.controllers
 
 import com.airbnb.epoxy.TypedEpoxyController
 import com.glureau.epoxy.dojo.LaunchesFragment
-import com.glureau.epoxy.dojo.data.dto.Launch
+import com.glureau.epoxy.data.dto.Launch
 import com.glureau.epoxy.dojo.items.itemLaunchBanner
 import com.glureau.epoxy.dojo.items.itemSeparator
 

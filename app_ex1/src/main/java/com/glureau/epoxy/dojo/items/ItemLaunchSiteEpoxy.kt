@@ -4,7 +4,7 @@ import android.widget.TextView
 import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyModelClass
 import com.airbnb.epoxy.EpoxyModelWithHolder
-import com.betclic.epoxy.KotlinEpoxyHolder
+import com.glureau.epoxy.common.KotlinEpoxyHolder
 import com.glureau.epoxy.dojo.R
 
 @EpoxyModelClass
@@ -25,7 +25,7 @@ abstract class ItemLaunchSiteEpoxy : EpoxyModelWithHolder<ItemLaunchSiteEpoxy.Ho
         holder.launchSiteLongName.text = launchSiteLongName
     }
 
-    class Holder : KotlinEpoxyHolder() {
+    class Holder : com.glureau.epoxy.common.KotlinEpoxyHolder() {
         val launchSiteId by bind<TextView>(R.id.itemLaunchSiteId)
         val launchSiteName by bind<TextView>(R.id.itemLaunchSiteName)
         val launchSiteLongName by bind<TextView>(R.id.itemLaunchSiteLongName)

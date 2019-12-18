@@ -4,7 +4,7 @@ import android.widget.TextView
 import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyModelClass
 import com.airbnb.epoxy.EpoxyModelWithHolder
-import com.betclic.epoxy.KotlinEpoxyHolder
+import com.glureau.epoxy.common.KotlinEpoxyHolder
 import com.glureau.epoxy.dojo.R
 
 @EpoxyModelClass
@@ -25,7 +25,7 @@ abstract class ItemLaunchRocketEpoxy : EpoxyModelWithHolder<ItemLaunchRocketEpox
         holder.rocketType.text = rocketType
     }
 
-    class Holder : KotlinEpoxyHolder() {
+    class Holder : com.glureau.epoxy.common.KotlinEpoxyHolder() {
         val rocketId by bind<TextView>(R.id.itemRocketId)
         val rocketName by bind<TextView>(R.id.itemRocketName)
         val rocketType by bind<TextView>(R.id.itemRocketType)

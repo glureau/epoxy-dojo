@@ -1,4 +1,4 @@
-package com.glureau.epoxy.dojo.data.dto
+package com.glureau.epoxy.data.dto
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

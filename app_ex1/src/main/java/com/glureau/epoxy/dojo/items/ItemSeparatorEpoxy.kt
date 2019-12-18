@@ -4,9 +4,10 @@ import android.view.View
 import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyModelClass
 import com.airbnb.epoxy.EpoxyModelWithHolder
-import com.betclic.epoxy.KotlinEpoxyHolder
+import com.glureau.epoxy.common.KotlinEpoxyHolder
 import com.glureau.epoxy.dojo.R
 
+// Just as an example, should use ItemDecoration instead.
 @EpoxyModelClass
 abstract class ItemSeparatorEpoxy : EpoxyModelWithHolder<ItemSeparatorEpoxy.Holder>() {
     override fun getDefaultLayout() = R.layout.item_separator
@@ -18,7 +19,7 @@ abstract class ItemSeparatorEpoxy : EpoxyModelWithHolder<ItemSeparatorEpoxy.Hold
         color?.let { holder.separator.setBackgroundColor(it) }
     }
 
-    class Holder : KotlinEpoxyHolder() {
+    class Holder : com.glureau.epoxy.common.KotlinEpoxyHolder() {
         val separator: View by bind(R.id.itemSeparator)
     }
 }

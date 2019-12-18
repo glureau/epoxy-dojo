@@ -2,7 +2,7 @@ package com.glureau.epoxy.dojo.controllers
 
 import android.graphics.Color
 import com.airbnb.epoxy.TypedEpoxyController
-import com.glureau.epoxy.dojo.data.dto.Launch
+import com.glureau.epoxy.data.dto.Launch
 import com.glureau.epoxy.dojo.items.*
 
 class LaunchDetailsController : TypedEpoxyController<Launch>() {
@@ -34,6 +34,7 @@ class LaunchDetailsController : TypedEpoxyController<Launch>() {
             }
             itemSeparator {
                 id(2)
+                color(Color.MAGENTA)
             }
         }
 

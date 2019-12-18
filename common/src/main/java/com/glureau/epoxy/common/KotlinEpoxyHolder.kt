@@ -2,7 +2,7 @@
  * Class copied from https://github.com/airbnb/epoxy/tree/master/kotlinsample/src/main/java/com/airbnb/epoxy/kotlinsample/helpers
  * We should remove this class when AS 3.6 and ViewBinding is available (Epoxy should probably update their libs then).
  */
-package com.betclic.epoxy
+package com.glureau.epoxy.common
 
 import android.view.View
 import com.airbnb.epoxy.EpoxyHolder

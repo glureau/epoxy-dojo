@@ -3,7 +3,7 @@ package com.glureau.epoxy.dojo
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.glureau.epoxy.dojo.data.dto.Launch
+import com.glureau.epoxy.data.dto.Launch
 
 class MainActivity : AppCompatActivity(), LaunchesFragment.LaunchesFragmentListener,
     LaunchesWithDetailsFragment.LaunchesWithDetailsFragmentListener {

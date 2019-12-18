@@ -1,8 +1,8 @@
-package com.glureau.epoxy.dojo.data
+package com.glureau.epoxy.data
 
 import android.content.Context
-import com.glureau.epoxy.dojo.R
-import com.glureau.epoxy.dojo.data.dto.Launch
+import com.glureau.epoxy.common.R
+import com.glureau.epoxy.data.dto.Launch
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
 import java.io.BufferedReader

@@ -1,2 +1,2 @@
-include ':app_ex1'
+include ':app_ex1', ':app', ':common'
 rootProject.name = 'EpoxyCodingDojo'
