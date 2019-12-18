@@ -1,0 +1,2 @@
+include ':app_ex1'
+rootProject.name = 'EpoxyCodingDojo'

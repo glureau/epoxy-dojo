@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemHeaderContainer"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="#111">
+
+    <ImageView
+        android:id="@+id/itemRocketImage"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:transitionName="itemHeaderImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rocket_location"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/itemLaunchSiteId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#DDD"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/itemLaunchSiteName"
+        app:layout_constraintEnd_toStartOf="@id/itemRocketImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="ID" />
+
+    <TextView
+        android:id="@+id/itemLaunchSiteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#DDD"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/itemLaunchSiteLongName"
+        app:layout_constraintEnd_toStartOf="@id/itemRocketImage"
+        app:layout_constraintTop_toBottomOf="@id/itemLaunchSiteId"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/itemLaunchSiteLongName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#DDD"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/itemRocketImage"
+        app:layout_constraintTop_toBottomOf="@id/itemLaunchSiteName"
+        tools:text="Long name" />
+</androidx.constraintlayout.widget.ConstraintLayout>
